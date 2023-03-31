@@ -93,7 +93,7 @@ elif option == 3:
     # ペンの色・塗りつぶし色・塗りつぶしモードか
     c = pencolor()  # ("black")
     c = fillcolor() # ("black")
-    c = color()     # (("black", "black"))
+    c = color()     # (("black", "black") = (pencolor(), fillcolor()))
     b = filling()   # (False)
     
     # カメの表示/非表示・見た目・その他 (詳しくは option=6 【カメの制御】 にて)
