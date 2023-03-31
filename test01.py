@@ -137,10 +137,10 @@ elif option == 4:
     # fillcolor: str|tuple  塗りつぶし色
     # pensize: int          太さ
     # speed: int            速さ
-    # resizemode: "auto"|"user"|"noresize"
-    # stretchfactor: (float,float)
-    # outline: int
-    # tilt: float
+    # resizemode: "auto"|"user"|"noresize"  (cf. option=6)
+    # stretchfactor: (float,float)          (cf. option=6 shapesize)
+    # outline: int                          (cf. option=6 shapesize)
+    # tilt: float                           (cf. option=6)
     
     # ペンの色・塗りつぶしの色
     pencolor("red")       # ("#33cc8c"などもOK)
