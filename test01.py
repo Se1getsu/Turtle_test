@@ -218,20 +218,20 @@ elif option == 6:
 elif option == 7:
     
     # 画面をクリック・カメをクリック・離す・ドラッグ
-    onscreenclick((lambda x, y: print("画面がクリックされた")))
-    onclick( (lambda x, y: print("カメがクリックされた")) )
-    onrelease( (lambda x, y: print("カメがリリースされた")) )
+    onscreenclick(lambda x, y: print("画面がクリックされた"))
+    onclick(lambda x, y: print("カメがクリックされた"))
+    onrelease(lambda x, y: print("カメがリリースされた"))
     ondrag( goto )
     # fun: (float, float) -> object コールバック
     # btn: int = 1                  マウスボタンの番号（デフォルト 1 は 左クリック）
     # add: True|False|None = None   Trueなら新しい束縛として、そうでなければ上書き
     
     # キーが押された・離された
-    onkeypress((lambda: print("上")), "Up")
-    onkeyrelease((lambda: print("上リリース")), "Up")   # onkey
+    onkeypress(lambda: print("上"), "Up")
+    onkeyrelease(lambda: print("上リリース"), "Up")   # onkey
     
     # t[ms]後に呼び出す
-    ontimer((lambda: print("3秒経過")), 3000)
+    ontimer(lambda: print("3秒経過"), 3000)
 
 
 # 【アニメーションの設定】
@@ -254,7 +254,7 @@ elif option == 9:
     
     # ウィンドウの位置と大きさをセット
     setup(0.5, 0.75, None, None)    # (初期値  幅:ディスプレイの50% 高さ:ディスプレイの75%  x:中央 y:中央)
-    setup(500, 400, 300, 200)    # (初期値  幅:500px 高さ:400px  x:300px y:200px)
+    setup(500, 400, 300, 200)    # (幅:500px 高さ:400px  x:300px y:200px)
     # 第 3,4 引数は省略可
     
     # ウィンドウフォーカスを獲得 (引数の xdummy, ydummy は onclick に渡す時用)
