@@ -108,7 +108,7 @@ elif option == 3:
     rect = shapetransform()  # (1.0, 0.0, 0.0, 1.0)
     rect = get_shapepoly()   # ((0, 0), (-5, -9), (0, -7), (5, -9))
     
-    # ペンの設定をタプルのリストで取得
+    # ペンの設定を辞書で取得
     p = pen()
     # {       'shown': True,
     #       'pendown': True,
