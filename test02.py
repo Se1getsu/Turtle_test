@@ -93,7 +93,7 @@ elif stage == 7:
     done()
     
     
-# 【復習：五芒星を描く】
+# 【復習：五芒星を描く】 体験者に自力で書かせてみましょう。
 elif stage == 8:
     
     for i in range(5):
